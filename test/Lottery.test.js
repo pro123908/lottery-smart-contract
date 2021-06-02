@@ -99,7 +99,7 @@ describe("Lottery Contract", () => {
     }
   });
 
-  it("sends money to the winner and reset the players", async () => {
+  it("sends money to the winner and resets the players", async () => {
     await lottery.methods.enter().send({
       from: accounts[0],
       value: web3.utils.toWei("2", "ether"),
